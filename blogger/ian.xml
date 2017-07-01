@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="IAN Ad" title_url="https://interactivead.network/" description="Embed Ads from IAN into your blog." author="IAN" author_email="info@boncom.com" height="251" thumbnail="https://tomjnsn.github.io/blogger/ian-logo.png" screenshot="https://tomjnsn.github.io/blogger/ian-screenshot.png">
+    <Locale lang="en" />
+    <Require feature="dynamic-height" />
+  </ModulePrefs>
+  <UserPref name="slot_id" display_name="Enter your embed code you received from us here." required="true" datatype="string" />
+  <Content type="html">
+    <![CDATA[
+    <script type="text/javascript">
+      <script src="//a.ian.xyz/js/ian.js" data-adslot="__UP_slot_id__"></script>
+    </script>
+    ]]>
+  </Content>
+</Module>
